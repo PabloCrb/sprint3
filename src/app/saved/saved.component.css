@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.contImagen {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 2em;
+  margin: 0.5em;
+}
+
+.contImagen > div {
+  width: 100%;
+  height: 100%;
+}

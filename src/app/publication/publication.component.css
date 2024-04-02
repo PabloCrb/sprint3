@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+}
+
+main {
+  min-height: 80vh;
+
+}
+
+/* Estilo del carrusel */
+.image-carousel-container {
+  margin-top: 10px;
+  width: auto;
+  height: 50vh; /*Utiliza el 50% de la pantalla visible como alto*/
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo de las imágenes */
+.image-carousel-container img {
+  display: none;
+  width: auto;
+  height: 100%;
+}
+
+/* Estilo de los botones */
+.carousel-button {
+  position: absolute; /* Posiciona los botones sobre el contenedor */
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Estilo del botón de dirección izquierda */
+.carousel-button.left {
+  left: 0;
+}
+
+/* Estilo del botón de dirección derecha */
+.carousel-button.right {
+  right: 0;
+}
+
+#information {
+  text-align: left;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+#topSide {
+  display: flex;
+  flex-direction: column;
+}
+
+.star{
+  font-size: 24px;
+  color: gold;
+}
+#publicationData, #userData {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#publicationData {
+  order: 1;
+}
+
+#photoUser {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+#name {
+  margin-top: 20px;
+  margin-right: 2.5%;
+}
+
+#content-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 97.5%;
+}
+
+#description {
+  width: 10vh;
+  margin-right: 20px;
+  flex: 1;
+}
+
+#no_final_image {
+  width: 55vh;
+  height: auto;
+}
+
+.Header-Comments{
+  display: flex;
+  margin-left: 2%;
+}
+.Header-Comments h2{
+  margin: 10px;
+
+}
+
+.Header-Comments #mostrar-formulario, .Header-Comments #addRating {
+  margin: 10px;
+  width: auto;
+  height: auto;
+}
+
+#addRating {
+  margin-left: auto;
+}
+
+.Header-Comments #addRating {
+  margin-left: auto;
+}
+
+/* Estilos para los comentarios */
+.comentario {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.nombre {
+  font-weight: bold;
+}
+.mensaje {
+  margin-top: 5px;
+}
+
+
+.comentario {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.header-comment{
+  display: flex;
+  align-items: center;
+}
+
+.imagen-comentario {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+
+.nombre {
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+
+.valoracion {
+  padding: 0 10px ;
+  font-style: italic;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.mensaje {
+  margin-left: 60px; /* Ajustar según el tamaño de la imagen */
+}
+
+.reporte {
+  margin:10px;
+}
+
+#map {
+  height: 40vh;
+  width: 100%;
+  justify-content: center;
+}
+
+#comentarios {
+  margin-left: 1.5%;
+  width: 80%;
+}
+
+#comentarios li, #ratings li {
+  margin-bottom: 10px;
+}
+
+.comments\&ratings {
+  display: flex;
+}
