@@ -1,0 +1,48 @@
+<main>
+  <div class="edit_profile_container">
+
+    <div for="profile_change_image" class="profile_change_image">
+      <input type="file" id="ProfileImageUpload" name="ProfileImageUpload" multiple accept="image/*">
+      <img src="" id="profilePhotoEditProfile" alt="">
+      <p>Change Photo</p>
+    </div>
+
+    <div class="name_username_email">
+      <div class="profile_name">
+        <p>Name:</p>
+        <label for="name"></label><input type="text" id="name" placeholder="Name">
+      </div>
+
+      <div class="profile_username">
+        <p>Username</p>
+        <label for="username"></label><input type="text" id="username" placeholder="Username">
+      </div>
+
+      <div class="change_password">
+        <button id="changePasswordBtn" onclick="toggleChangePassword()">Change Password</button>
+      </div>
+    </div>
+
+    <form id="changePasswordContainer" class="change_password_container" >
+      <p>New Password:</p>
+      <label for="newPassword"></label><input type="password" id="newPassword" placeholder="New Password" required>
+      <p>Repeat Password:</p>
+      <label for="repeatPassword"></label><input type="password" id="repeatPassword" placeholder="Repeat Password" required>
+      <div id="passwordError"></div>
+      <div class="confirm_new_password_button">
+        <button id="cancelNewPasswordBtn" onclick="toggleChangePassword()" type="button">Cancel</button>
+        <button id="confirmNewPasswordBtn" onclick="validateOfChangePassword()" type="button">Confirm new password</button>
+      </div>
+    </form>
+
+    <div class="save_and_exit_buttons">
+      <div class="exit_button">
+        <button id="exitBtn" onclick="location.href='../Account/account.html';">Exit</button>
+      </div>
+
+      <div class="save_button">
+        <button id="saveBtn">Save</button>
+      </div>
+    </div>
+  </div>
+</main>

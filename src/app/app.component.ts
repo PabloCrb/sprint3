@@ -4,11 +4,12 @@ import {HeaderComponent} from "./header/header.component";
 import {FooterComponent} from "./footer/footer.component";
 import {AccountComponent} from "./account/account.component";
 import {AddPublicationComponent} from "./add-publication/add-publication.component";
+import {EditProfileComponent} from "./edit-profile/edit-profile.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, AccountComponent, AddPublicationComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, AccountComponent, AddPublicationComponent, EditProfileComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
