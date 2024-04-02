@@ -1,0 +1,36 @@
+#main_footer {
+  background-color: #605959;
+  padding: 15px;
+  text-align: center;
+}
+
+#main_footer a {
+  color: #F5E9E9;
+  text-decoration: none;
+  margin-right: 8%;
+  font-family: 'ABeeZee', sans-serif;
+
+}
+
+#main_footer a:hover {
+  text-decoration: underline;
+}
+
+/* ------ RESPONSIVE ALIGNING ------ */
+
+@media screen and (max-width: 670px) {
+  #main_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #main_footer p {
+    margin: 10px 0;
+  }
+
+  #main_footer a {
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    font-size: 0.9em;
+  }
+}
