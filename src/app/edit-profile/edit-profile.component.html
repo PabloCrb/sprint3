@@ -19,7 +19,7 @@
       </div>
 
       <div class="change_password">
-        <button id="changePasswordBtn" onclick="toggleChangePassword()">Change Password</button>
+        <button id="changePasswordBtn" (click)="toggleChangePassword()">Change Password</button>
       </div>
     </div>
 
@@ -30,14 +30,14 @@
       <label for="repeatPassword"></label><input type="password" id="repeatPassword" placeholder="Repeat Password" required>
       <div id="passwordError"></div>
       <div class="confirm_new_password_button">
-        <button id="cancelNewPasswordBtn" onclick="toggleChangePassword()" type="button">Cancel</button>
-        <button id="confirmNewPasswordBtn" onclick="validateOfChangePassword()" type="button">Confirm new password</button>
+        <button id="cancelNewPasswordBtn" (click)="toggleChangePassword()" type="button">Cancel</button>
+        <button id="confirmNewPasswordBtn" (click)="validateOfChangePassword()" type="button">Confirm new password</button>
       </div>
     </form>
 
     <div class="save_and_exit_buttons">
       <div class="exit_button">
-        <button id="exitBtn" onclick="location.href='../Account/account.html';">Exit</button>
+        <button id="exitBtn" (click)="exit()">Exit</button>
       </div>
 
       <div class="save_button">
