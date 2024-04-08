@@ -18,9 +18,9 @@ export class EditProfileComponent {
   async validateOfChangePassword(): Promise<void> {
     localStorage.getItem('userId');
     const pass1: HTMLInputElement | null = document.getElementById("newPassword") as HTMLInputElement;
-    console.log(pass1.value);
+    //console.log(pass1.value);
     const pass2: HTMLInputElement | null = document.getElementById("repeatPassword") as HTMLInputElement;
-    console.log(pass2.value);
+    //console.log(pass2.value);
     const errorDiv: HTMLElement | null = document.getElementById("passwordError");
 
     if (pass1 && pass2 && errorDiv) {
@@ -30,11 +30,16 @@ export class EditProfileComponent {
         errorDiv.innerText = "Password is empty";
       } else if (pass1.value.length < 6) {
         errorDiv.innerText = "At least 6 characters";
+      } else {
+        const container: HTMLElement | null = document.getElementById('changePasswordContainer');
+        if (container) {
+          container.classList.toggle('active');
+        }
       }
     }
   }
 
   exit() {
-    location.href='../Account/account.html';
+    location.href='../Account/account.html'; // NO SIRVE - DOESN'T WORK
   }
 }
