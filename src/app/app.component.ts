@@ -17,5 +17,5 @@ import {LogInComponent} from "./log-in/log-in.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Sprint3';
+  title = 'ExploreSpots';
 }
