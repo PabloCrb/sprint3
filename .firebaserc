@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "prueba-53b0b": {
+      "hosting": {
+        "sprint3": [
+          "prueba-53b0b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "prueba-53b0b"
+  }
+}
