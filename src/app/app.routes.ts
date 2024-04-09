@@ -7,6 +7,7 @@ import {SavedComponent} from "./saved/saved.component";
 import {EditProfileComponent} from "./edit-profile/edit-profile.component";
 import {PublicationComponent} from "./publication/publication.component";
 import {AddPublicationComponent} from "./add-publication/add-publication.component";
+import {EditProfilePageComponent} from "./edit-profile-page/edit-profile-page.component";
 
 export const routes: Routes = [
   {path: '', component:LogInComponent},
@@ -14,7 +15,7 @@ export const routes: Routes = [
   {path: 'map', component:MapPageComponent},
   {path: 'account', component:AccountComponent},
   {path: 'saved', component:SavedComponent},
-  {path: 'edit-profile', component:EditProfileComponent},
+  {path: 'edit-profile', component:EditProfilePageComponent},
   {path: 'publication', component:PublicationComponent},
   {path: 'add-publication', component:AddPublicationComponent},
 ];

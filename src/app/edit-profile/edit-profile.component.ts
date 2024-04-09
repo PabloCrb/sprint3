@@ -43,3 +43,4 @@ export class EditProfileComponent {
     location.href='../Account/account.html'; // NO SIRVE - DOESN'T WORK
   }
 }
+
