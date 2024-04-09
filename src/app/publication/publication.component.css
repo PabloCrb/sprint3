@@ -21,7 +21,7 @@ main {
 
 /* Estilo de las imágenes */
 .image-carousel-container img {
-  display: none;
+  /*display: none;*/
   width: auto;
   height: 100%;
 }

@@ -1,12 +1,14 @@
+<app-header></app-header>
 <main>
   <div class="User">
-    <img id="profilePhotoAccount" alt="" src="">
-    <span id="userName"><b></b></span>
+    <img id="profilePhotoAccount" alt="" src="{{profileImage}}">
+    <span id="userName"><b>{{username}}</b></span>
     <div class="options">
-      <a href="#">SAVED</a>
-      <a href="#">CREATE</a>
-      <a href="#">EDIT PROFILE</a>
+      <a routerLink="saved">SAVED</a>
+      <a routerLink="add-publication">CREATE</a>
+      <a routerLink="edit-profile">EDIT PROFILE</a>
     </div>
   </div>
   <div class="contImagen" id="imagenContainer"></div>
 </main>
+<app-footer></app-footer>

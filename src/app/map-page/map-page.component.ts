@@ -1,17 +1,19 @@
 import { Component } from '@angular/core';
 import {HeaderComponent} from "../header/header.component";
 import {FooterComponent} from "../footer/footer.component";
+import {MapComponent} from "../map/map.component";
 
 @Component({
-  selector: 'app-saved',
+  selector: 'app-map-page',
   standalone: true,
   imports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MapComponent
   ],
-  templateUrl: './saved.component.html',
-  styleUrl: './saved.component.css'
+  templateUrl: './map-page.component.html',
+  styleUrl: './map-page.component.css'
 })
-export class SavedComponent {
+export class MapPageComponent {
 
 }

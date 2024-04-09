@@ -21,6 +21,7 @@ body {
   width: 8em;
   height: 8em;
   object-fit: cover;
+  border-radius: 50%;
 }
 
 .User span {

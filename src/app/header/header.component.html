@@ -1,16 +1,14 @@
-
 <header id="header">
-  <img src="../../assets/logoImage/logo_ExploreSpots_sin_fondo.png" alt="" onclick="location.href='#';">
+  <img src="../../assets/logoImage/logo_ExploreSpots_sin_fondo.png" alt="" (click)="navigateToMap()">
   <nav id="nav-bar">
     <ul>
-      <li><a href="#">Map</a></li>
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Saved</a></li>
-      <li><a href="#">Add publication</a></li>
-      <li><a href="#">Edit profile</a></li>
+      <li><a routerLink="/map">Map</a></li>
+      <li><a routerLink="/account">Profile</a></li>
+      <li><a routerLink="/saved">Saved</a></li>
+      <li><a routerLink="/add-publication">Add publication</a></li>
+      <li><a routerLink="/edit-profile">Edit profile</a></li>
     </ul>
   </nav>
-  <button id="LogOut" onclick="location.href='../index.html'; localStorage.setItem('userId', null);">LogOut</button>
-  <img src="" id="profilePhotoHeader" alt="" onclick="location.href='#';">
+  <button id="LogOut" (click)="logout()">LogOut</button>
+  <img src="" id="profilePhotoHeader" alt="">
 </header>
-

@@ -13,7 +13,9 @@ import {EditProfilePageComponent} from "./edit-profile-page/edit-profile-page.co
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, LogInComponent, AccountComponent, AddPublicationComponent, EditProfileComponent, PublicationComponent, SavedComponent, EditProfilePageComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, LogInComponent,
+    AccountComponent, AddPublicationComponent, EditProfileComponent,
+    PublicationComponent, SavedComponent, EditProfilePageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

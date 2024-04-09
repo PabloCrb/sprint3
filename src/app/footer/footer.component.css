@@ -1,7 +1,8 @@
 #main_footer {
   background-color: #605959;
-  padding: 15px;
+  padding-top: 15px;
   text-align: center;
+  height: 5vh;
 }
 
 #main_footer a {
