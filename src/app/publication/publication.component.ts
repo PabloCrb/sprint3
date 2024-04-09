@@ -1,20 +1,33 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';import {HeaderComponent} from "../header/header.component";
 import {FooterComponent} from "../footer/footer.component";
-import {CommonModule} from "@angular/common";
+import {CommonModule, NgIf} from "@angular/common";
 import {MapComponent} from "../map/map.component";
+import {PhoneHeaderComponent} from "../phone-header/phone-header.component";
+import {BreakpointObserver} from "@angular/cdk/layout";
 
 @Component({
   selector: 'app-publication',
   imports: [
     HeaderComponent,
     FooterComponent,
-    MapComponent
+    MapComponent,
+    NgIf,
+    PhoneHeaderComponent
   ],
   templateUrl: './publication.component.html',
   standalone: true,
   styleUrl: './publication.component.css'
 })
 export class PublicationComponent implements AfterViewInit{
+  isPhoneScreen = false;
+  constructor(private breakpointObserver: BreakpointObserver) {
+    this.breakpointObserver.observe([
+      `(max-width: 720px)`
+    ]).subscribe(result => {
+      this.isPhoneScreen = result.matches;
+    });
+  }
+
   images = [
     '../../assets/Landscapes/dadad58b-e68d-4509-b312-07c1072c09ef_16-9-aspect-ratio_default_0 - copia.jpg',
     '../../assets/Landscapes/Galeria-Las-Canteras-01_0 - copia.jpg',

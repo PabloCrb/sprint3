@@ -1,13 +1,32 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
+import {FooterComponent} from "../footer/footer.component";
+import {HeaderComponent} from "../header/header.component";
+import {NgIf} from "@angular/common";
+import {PhoneHeaderComponent} from "../phone-header/phone-header.component";
+import {BreakpointObserver} from "@angular/cdk/layout";
 
 @Component({
   selector: 'app-edit-profile',
   standalone: true,
-  imports: [],
+  imports: [
+    FooterComponent,
+    HeaderComponent,
+    NgIf,
+    PhoneHeaderComponent
+  ],
   templateUrl: './edit-profile.component.html',
   styleUrl: './edit-profile.component.css'
 })
 export class EditProfileComponent {
+  isPhoneScreen = false;
+  constructor(private router: Router, private breakpointObserver: BreakpointObserver) {
+    this.breakpointObserver.observe([
+      `(max-width: 720px)`
+    ]).subscribe(result => {
+      this.isPhoneScreen = result.matches;
+    });
+  }
   toggleChangePassword(): void {
     const container: HTMLElement | null = document.getElementById('changePasswordContainer');
     if (container) {
@@ -40,7 +59,6 @@ export class EditProfileComponent {
   }
 
   exit() {
-    location.href='../Account/account.html'; // NO SIRVE - DOESN'T WORK
+    this.router.navigateByUrl("account"); // NO SIRVE - DOESN'T WORK
   }
 }
-

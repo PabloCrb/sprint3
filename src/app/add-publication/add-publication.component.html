@@ -1,4 +1,9 @@
-<app-header></app-header>
+<div *ngIf="!isPhoneScreen">
+  <app-header/>
+</div>
+<div *ngIf="isPhoneScreen">
+  <app-phone-header/>
+</div>
 <main>
   <div class="add_publication_container">
 

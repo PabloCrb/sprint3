@@ -8,14 +8,13 @@ import {EditProfileComponent} from "./edit-profile/edit-profile.component";
 import {PublicationComponent} from "./publication/publication.component";
 import {SavedComponent} from "./saved/saved.component";
 import {LogInComponent} from "./log-in/log-in.component";
-import {EditProfilePageComponent} from "./edit-profile-page/edit-profile-page.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent, LogInComponent,
     AccountComponent, AddPublicationComponent, EditProfileComponent,
-    PublicationComponent, SavedComponent, EditProfilePageComponent],
+    PublicationComponent, SavedComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
