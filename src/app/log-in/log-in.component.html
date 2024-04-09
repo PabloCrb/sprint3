@@ -14,7 +14,7 @@
     <div class="login-form-container">
       <div class="login-form">
         <b>LOGIN</b>
-        <form method="post" id="loginForm" onsubmit="return false;">
+        <form method="post" id="loginForm">
           <div class="form-group">
             <label for="user_name">Email:</label>
             <input type="text" id="user_name" name="user_name" required>
@@ -25,7 +25,7 @@
             <input type="password" id="password" name="password" required>
           </div>
 
-          <button type="submit" id="LoginButton">Login</button>
+          <button type="button" id="LoginButton" (click)="login()">Login</button>
 
           <div class="other_options">
             <div class="dont-have-account-link">

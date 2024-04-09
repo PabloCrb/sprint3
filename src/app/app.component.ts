@@ -18,5 +18,5 @@ import {EditProfilePageComponent} from "./edit-profile-page/edit-profile-page.co
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Sprint3';
+  title = 'ExploreSpots';
 }
